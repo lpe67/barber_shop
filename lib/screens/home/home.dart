@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  final titleStyle = TextStyle(
+  final titleStyle = const TextStyle(
       color: Colors.black, fontSize: 10, fontWeight: FontWeight.normal);
 
   @override
