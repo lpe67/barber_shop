@@ -51,13 +51,12 @@ class Home extends StatelessWidget {
             margin: EdgeInsets.only(left: 20, right: 20, top: 30),
             decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(
-                  20,
-                )))),
+                borderRadius: BorderRadius.all(Radius.circular(20,))),
+                  ),
       ])),
     );
   }
-
+  
   @override
   Widget icones() {
     return Row(
