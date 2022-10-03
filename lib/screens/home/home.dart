@@ -1,3 +1,8 @@
+import 'package:barber_shop/screens/agendaments/agendaments.dart';
+import 'package:barber_shop/screens/config/config.dart';
+import 'package:barber_shop/screens/history/history.dart';
+import 'package:barber_shop/screens/new/new.dart';
+import 'package:barber_shop/screens/pricetable/pricetable.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/link.dart';
@@ -100,7 +105,7 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => New()));},
                               child: Column(
                                 children: [
                                   Icon(
@@ -119,7 +124,7 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Agendaments()));},
                               child: Column(
                                 children: [
                                   Icon(
@@ -138,7 +143,7 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => History()));},
                               child: Column(
                                 children: [
                                   Icon(
@@ -157,7 +162,7 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Pricetable()));},
                               child: Column(
                                 children: [
                                   Icon(
@@ -213,7 +218,17 @@ class Home extends StatelessWidget {
                                 ],
                               ),
                             )),
+// TROCAR ISSO DEPOIS PRA UM LUGAR MELHOR TÁ NUM LUGAR HORRIVEL
+// IIIIIIIIIIIIIIIIIII
+// IIIIIIIIIIIIIIIIII
+// IIIIIIIIIIIIIIIIIII
+
+                            IconButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Config()));}, icon: const Icon(MdiIcons.cog), color: Colors.white, ),
+//IIIIIIIIIIIIIIIIIIII
+//IIIIIIIIIIIIIIIIIIIII
+//IIIIIIIIIIIIIIIIIIIII
                       ]))
+,
             ],
           ),
         ));
