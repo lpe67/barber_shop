@@ -4,6 +4,8 @@ import 'package:url_launcher/link.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_grid_button/flutter_grid_button.dart';
 
+import '../about/about.dart';
+
 class Home extends StatelessWidget {
   final titleStyle = const TextStyle(
       color: Colors.black, fontSize: 10, fontWeight: FontWeight.normal);
@@ -174,7 +176,12 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => About()));
+                              },
                               child: Column(
                                 children: [
                                   Icon(

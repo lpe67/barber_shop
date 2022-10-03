@@ -9,6 +9,25 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      body: Container(
+        decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5))),
+        color: Colors.white,
+        margin: EdgeInsets.only(left: 22, right: 22, top: 40, bottom: 80),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: Icon(MdiIcons.arrowLeft))
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
