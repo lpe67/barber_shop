@@ -17,7 +17,8 @@ class ItemList extends StatelessWidget {
         Row(
           children: [
             CircleAvatar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.black,
+              foregroundColor: Colors.white,
               child: Text(
                 agenda.name_agenda.substring(0, 1),
               ),

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:barber_shop/screens/agendaments/agendaments.dart';
 import 'package:barber_shop/screens/config/config.dart';
 import 'package:barber_shop/screens/history/history.dart';
-import 'package:barber_shop/screens/new/new.dart';
+import 'package:barber_shop/screens/neew/neew.dart';
 import 'package:barber_shop/screens/pricetable/pricetable.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -111,7 +111,7 @@ class Home extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => New()));
+                                        builder: (context) => Neew()));
                               },
                               child: Column(
                                 children: [

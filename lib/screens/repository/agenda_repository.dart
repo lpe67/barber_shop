@@ -1,7 +1,7 @@
 import 'package:barber_shop/screens/model/agenda.dart';
 import 'package:barber_shop/screens/model/dao.dart';
 
-class ContactRepository {
+class AgendaRepository {
   static const _table = "barber_shop";
   static Future<int> insertContact(Agenda agenda) async {
     final db = await DAO.getConnection();
