@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:barber_shop/screens/agendaments/agendaments.dart';
 import 'package:barber_shop/screens/config/config.dart';
 import 'package:barber_shop/screens/history/history.dart';
@@ -105,7 +107,12 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => New()));},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => New()));
+                              },
                               child: Column(
                                 children: [
                                   Icon(
@@ -124,7 +131,12 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Agendaments()));},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Agendaments()));
+                              },
                               child: Column(
                                 children: [
                                   Icon(
@@ -143,7 +155,12 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => History()));},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => History()));
+                              },
                               child: Column(
                                 children: [
                                   Icon(
@@ -162,7 +179,12 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Pricetable()));},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Pricetable()));
+                              },
                               child: Column(
                                 children: [
                                   Icon(
@@ -205,7 +227,9 @@ class Home extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5))),
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                exit(0);
+                              },
                               child: Column(
                                 children: [
                                   Icon(
@@ -223,12 +247,10 @@ class Home extends StatelessWidget {
 // IIIIIIIIIIIIIIIIII
 // IIIIIIIIIIIIIIIIIII
 
-                            IconButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Config()));}, icon: const Icon(MdiIcons.cog), color: Colors.white, ),
 //IIIIIIIIIIIIIIIIIIII
 //IIIIIIIIIIIIIIIIIIIII
 //IIIIIIIIIIIIIIIIIIIII
-                      ]))
-,
+                      ])),
             ],
           ),
         ));

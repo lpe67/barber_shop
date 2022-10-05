@@ -34,6 +34,9 @@ dependencies:
   material_design_icons_flutter: ^3.2.3895
   url_launcher: ^5.4.0
   flutter_grid_button: ^2.0.0
+  sqflite: ^2.1.0
+  email_validator: ^2.1.17
+  flutter_masked_text2: ^0.9.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
