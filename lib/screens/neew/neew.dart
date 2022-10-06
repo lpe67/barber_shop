@@ -92,25 +92,13 @@ class _Neewagenda extends State<Neew> {
                   ),
                   TextFormField(
                     controller: data_agendaController,
+                    keyboardType: TextInputType.phone,
                     validator: (text) =>
                         (text == null) ? "A data está faltando" : null,
                     decoration: InputDecoration(
                       label: const Text("AAAA/MM/DD"),
-                      icon: const Icon(Icons.password),
-                      suffixIcon: IconButton(
-                        onPressed: () {
-                          setState(() {
-                            _isObscure = !_isObscure;
-                          });
-                        },
-                        icon: Icon(
-                          (_isObscure)
-                              ? Icons.visibility
-                              : Icons.visibility_off,
-                        ),
-                      ),
+                      icon: const Icon(Icons.calendar_month),
                     ),
-                    obscureText: _isObscure,
                   ),
                 ]),
               ),
@@ -130,9 +118,9 @@ class _Neewagenda extends State<Neew> {
             final result = await AgendaRepository.insertContact(agenda);
             String message;
             if (result != 0) {
-              message = "Contato salvo com sucesso!!!";
+              message = "Cliente salvo com sucesso!!!";
             } else {
-              message = "Lamento, não foi possível salvar o contato";
+              message = "Lamento, não foi possível salvar o cliente";
             }
             final snack = SnackBar(content: Text(message));
             ScaffoldMessenger.of(context).showSnackBar(snack);

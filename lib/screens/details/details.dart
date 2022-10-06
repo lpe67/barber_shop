@@ -1,3 +1,4 @@
+import 'package:barber_shop/screens/edit/edit.dart';
 import 'package:barber_shop/screens/model/agenda.dart';
 import 'package:barber_shop/screens/model/agenda.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,7 @@ class Details extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(
           agenda.name_agenda,
         ),
@@ -52,12 +54,30 @@ class Details extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Row(
-                          children: const [
-                            Icon(Icons.videocam),
-                            Icon(Icons.message_outlined)
-                          ],
-                        ),
+                        Container(
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        EditAgenda(agenda: agenda),
+                                  ),
+                                );
+                              },
+                              child: Text(
+                                'Editar cliente',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )),
+                        )
                       ],
                     ),
                     const Divider(),
