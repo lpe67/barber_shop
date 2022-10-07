@@ -41,7 +41,11 @@ class _Neewagenda extends State<Neew> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    icon: Icon(MdiIcons.arrowLeft))
+                    icon: Icon(MdiIcons.arrowLeft)),
+                Text(
+                  "Novo Agendamento",
+                  style: TextStyle(fontSize: 20),
+                )
               ],
             ),
             Container(

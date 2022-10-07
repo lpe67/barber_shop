@@ -30,4 +30,9 @@ class AgendaRepository {
       whereArgs: [agenda.id],
     );
   }
+
+  static Future<int> deleteAgenda(Agenda agenda) async {
+    final db = await DAO.getConnection();
+    return await db.delete(_table, where: "id=?", whereArgs: [agenda.id]);
+  }
 }

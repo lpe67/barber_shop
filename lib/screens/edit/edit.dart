@@ -60,6 +60,9 @@ class _EditAgendaState extends State<EditAgenda> {
             }
             final snack = SnackBar(content: Text(message));
             ScaffoldMessenger.of(context).showSnackBar(snack);
+            Navigator.pop(context);
+            Navigator.pop(context);
+            Navigator.pop(context);
           }
         },
         child: const Icon(

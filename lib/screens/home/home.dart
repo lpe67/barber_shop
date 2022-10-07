@@ -52,8 +52,8 @@ class Home extends StatelessWidget {
                         child: Image.asset('assets/images/logo.png')),
                   ])),
               Container(
-                margin: const EdgeInsets.only(left: 30, top: 30, right: 150),
-                child: const Text('Bem-vindo! [placeholder]',
+                margin: const EdgeInsets.only(left: 30, top: 30, right: 280),
+                child: const Text('Bem-vindo!',
                     style: TextStyle(color: Colors.white, fontSize: 25)),
               ),
               Container(
